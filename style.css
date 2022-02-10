@@ -1,0 +1,139 @@
+body {
+  background: black;
+  user-select: none;
+  color: white;
+}
+
+body * {
+  font-family: verdana;
+}
+
+.grid {
+  text-align: center;
+}
+
+.grid #quiz p {
+  display: flex;
+  align-items: center;
+  border: 2px solid blue;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  width: 400px;
+  height: 150px;
+  margin: 100px auto !important;
+  padding: 15px;
+}
+
+.grid #quiz h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 400px;
+  margin: 0 auto;
+  border: 2px solid blue;
+  border-radius: 8px;
+  width: 400px;
+  margin: 70px auto !important;
+  padding: 15px;
+}
+.grid #quiz hr {
+  height: 2px;
+  border: none;
+  background-color: blue;
+  margin-bottom: -50px;
+}
+
+.grid #quiz img {
+  height: 300px;
+}
+
+.grid #quiz #question {
+  font-size: 2rem;
+  margin: 60px auto;
+}
+
+.grid #quiz .buttons {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 100px 100px;
+  grid-gap: 20px;
+  margin: 0 auto 30px auto;
+  max-width: 500px;
+}
+
+.grid #quiz .buttons button {
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+footer p {
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif !important;
+  height: 60px !important;
+  display: inline-block !important;
+}
+
+footer p span {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif !important;
+  line-height: 60px;
+}
+
+.selected {
+  /* background: gold !important; */
+  color: black !important;
+  border: 2px solid white !important;
+}
+
+.selected::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: gold;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: glowing 0.5s linear 0s infinite alternate;
+}
+
+@keyframes glowing {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.correct {
+  background: green !important;
+}
+
+.incorrect {
+  background: red !important;
+}
+
+.all-correct {
+  border: 2px solid green;
+  border-radius: 8px;
+  width: 400px;
+  margin: 100px auto !important;
+}
+
+.all-incorrect {
+  border: 2px solid red;
+  border-radius: 8px;
+  width: 400px;
+  margin: 100px auto !important;
+}
+
+.mediocre {
+  border: 2px solid blue;
+  border-radius: 8px;
+  width: 400px;
+  margin: 100px auto !important;
+}
