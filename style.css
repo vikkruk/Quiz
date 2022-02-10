@@ -70,6 +70,10 @@ body * {
   position: relative;
 }
 
+button:hover {
+  cursor: pointer !important;
+}
+
 footer p {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif !important;
   height: 60px !important;
