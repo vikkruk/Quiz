@@ -70,19 +70,17 @@ body * {
   position: relative;
 }
 
-button:hover {
-  cursor: pointer !important;
-}
-
 footer p {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif !important;
   height: 60px !important;
+  display: inline-block !important;
+
   align-items: center;
   border: 2px solid blue;
   border-radius: 8px;
   font-size: 1.5rem;
   width: 400px;
-  margin: 73px auto;
+  margin: 70px auto;
   padding: 15px;
 }
 

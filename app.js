@@ -90,7 +90,12 @@ let showResults = () => {
   } else {
     quiz.innerHTML = `<h1>Result: ${resultNumber}</h1><img src="https://pluspng.com/img-png/png-shrug-view-samegoogleiqdbsaucenao-shrug-png-328.png"><p>Gali ir geriau (ar blogiau ;))`;
     document.querySelector("h1").classList.add("mediocre");
-    document.querySelector("p").style.height = "auto";
+    document.querySelector("p").style.border = "2px solid blue";
+    document.querySelector("p").style.width = "400px";
+    document.querySelector("p").style.margin = "70px auto";
+    document.querySelector("p").style.padding = "15px";
+    document.querySelector("p").style.fontSize = "1.5rem";
+    document.querySelector("p").style.borderRadius = "8px";
   }
 };
 
